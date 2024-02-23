@@ -1,0 +1,7 @@
+Ad Soyad: Lale Hüseyin
+Okul/Mezuniyet:Bilgisayar Mühendisliği 4. sınıf- Marmara Üniversitesi
+Yaş:21
+Swift Bilgisi: Başlangıç
+Bildiği başka dil: Java, React, Python
+email: lale.huseyin@outlook.com 
+linkedin.com: lale huseyin
