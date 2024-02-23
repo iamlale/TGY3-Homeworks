@@ -4,4 +4,4 @@ Yaş:21
 Swift Bilgisi: Başlangıç
 Bildiği başka dil: Java, React, Python
 email: lale.huseyin@outlook.com 
-linkedin.com: lale huseyin
+linkedin.com: lale hüseyin
