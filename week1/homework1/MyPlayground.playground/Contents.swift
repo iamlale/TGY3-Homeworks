@@ -121,8 +121,37 @@ func sumOfEvenFibonacciTerms(upTo limit: Int) -> Int {
 // 100e kadar olan fib sayilarini bul
 let limit = 100
 let summation = sumOfEvenFibonacciTerms(upTo: limit)
-print(summation)
+//print(summation)
+
+
 
 /*
  The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143?
  */
+
+func largestPrimeFactor(of number: Int) -> Int {
+    var num = number
+    var largestPrime = 2
+    var factor = 2
+    
+    
+    while factor <= num {
+        if num % factor == 0 {
+            num /= factor
+            largestPrime = factor
+        } else {
+            factor += 1
+        }
+    }
+    
+    if num > largestPrime {
+        largestPrime = num
+    }
+    
+    return largestPrime
+}
+
+let number = 17
+let largestPrime = largestPrimeFactor(of: number)
+//print("The largest prime factor of \(number) is \(largestPrime)")
+
