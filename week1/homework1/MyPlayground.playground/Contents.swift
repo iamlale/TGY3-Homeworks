@@ -101,13 +101,27 @@ let result = sumOfMultiples()
  By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
 
-func sumOfEvenFibNums(number: Int) -> Int {
-    var sum: Int = 0
+func sumOfEvenFibonacciTerms(upTo limit: Int) -> Int {
+    var sum = 0
+    var a = 1
+    var b = 2
+    
+    while a <= limit {
+        if a % 2 == 0 {
+            sum += a
+        }
+        let nextTerm = a + b
+        a = b
+        b = nextTerm
+    }
     
     return sum
 }
-let tillThisNum = 100
-print(sumOfEvenFibNums(number: tillThisNum))
+
+// 100e kadar olan fib sayilarini bul
+let limit = 100
+let summation = sumOfEvenFibonacciTerms(upTo: limit)
+print(summation)
 
 /*
  The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143?
