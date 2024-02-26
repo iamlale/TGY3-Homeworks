@@ -33,7 +33,7 @@ func removeRecurringCharacters(from string: String, withThreshold threshold: Int
     return newString
 }
 
-let inputString = "aba kouq bux"
+let inputString = "aaba kouq bux"
 let threshold = 2
 //print(removeRecurringCharacters(from: inputString, withThreshold: threshold))
 
@@ -74,7 +74,7 @@ let wordOccurrences = findWordsCount(in: inputSentence)
 func sumOfMultiples () -> Int{
     
     var sumOfMult = 0
-    let count: Int = 1000
+    let count: Int = 16
 
     
     for number in 1..<count{
@@ -100,7 +100,7 @@ let result = sumOfMultiples()
   1 and 2, the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
  By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
-
+//farkli fib algoritmasi
 func sumOfEvenFibonacciTerms(upTo limit: Int) -> Int {
     var sum = 0
     var a = 1
@@ -134,7 +134,7 @@ func largestPrimeFactor(of number: Int) -> Int {
     var largestPrime = 2
     var factor = 2
     
-    
+  //asal sayiyi yakalarken daha hizli nasil bolebiliriz?
     while factor <= num {
         if num % factor == 0 {
             num /= factor
