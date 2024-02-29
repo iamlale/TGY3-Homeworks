@@ -14,10 +14,10 @@ func sumOfSquares (number: Int) -> Int {
 }
 
 func squareOfSum (num: Int) -> Int {
-    let formula = (num*(num+1))/2  // ((n)(n+1))/2
-    return formula*formula
+    let formula = (num * (num + 1))/2  // ((n)(n+1))/2
+    return formula * formula
 }
 let naturalNum = 100
-print("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is \(squareOfSum(num: naturalNum)-sumOfSquares(number: naturalNum))")
+print("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is \(squareOfSum(num: naturalNum)-sumOfSquares(number: naturalNum))") //25164150
 
 
