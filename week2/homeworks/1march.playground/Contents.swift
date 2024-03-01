@@ -34,30 +34,25 @@ printPlusMinus(count: 1)*/
  Örneğin parametre 0 için çıktı 50 olmalıdır. Parametre 528 için 285, parametre 920 için 9520 olmalıdır*/
 
 func insertFive(toMakeLargest number: Int) -> Int {
+    // convert the input number to a string for easy manipulation
     let numStr = String(number)
-    var maxNumber = Int.min
+    var maxNumber = Int.min // Initialize maxNumber with the smallest integer
     
-    // negatif sayilar icin
-    if number < 0 {
-        let absNumStr = String(abs(number))
-        for i in 0...absNumStr.count {
-            let startIndex = absNumStr.index(absNumStr.startIndex, offsetBy: i)
-            let tempNumStr = absNumStr.prefix(i) + "5" + absNumStr.suffix(absNumStr.count - i)
-            if let tempNum = Int(tempNumStr), -tempNum > maxNumber {
-                maxNumber = -tempNum
-            }
-        }
-    } else {
-        for i in 0...numStr.count {
-            let startIndex = numStr.index(numStr.startIndex, offsetBy: i)
-            let tempNumStr = numStr.prefix(i) + "5" + numStr.suffix(numStr.count - i)
-            if let tempNum = Int(tempNumStr), tempNum > maxNumber {
-                maxNumber = tempNum
-            }
+    // find  range for insertion based on the number being positive or negative
+    let range = number >= 0 ? 0...numStr.count : 1...numStr.count // Start from 1 for negative numbers to skip the '-' sign
+    
+    for i in range {
+        // insert 5 at the current position i
+        let newNumStr = numStr.prefix(i) + "5" + numStr.suffix(numStr.count - i)
+        
+        // convert new string back to an integer
+        if let newNum = Int(newNumStr), newNum > maxNumber {
+            // update maxNumber if  new number is larger
+            maxNumber = newNum
         }
     }
-
+    
     return maxNumber
 }
 
-print(insertFive(toMakeLargest: 150))
+print(insertFive(toMakeLargest: 0))
