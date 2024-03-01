@@ -26,7 +26,7 @@ printPlusMinus(count: 1)*/
  }
 
  // Example usage:
- printPlusMinus(count: 10)
+ printPlusMinus(count: 1)
 
 
 
@@ -34,12 +34,12 @@ printPlusMinus(count: 1)*/
  Örneğin parametre 0 için çıktı 50 olmalıdır. Parametre 528 için 285, parametre 920 için 9520 olmalıdır*/
 
 func insertFive(toMakeLargest number: Int) -> Int {
-    // convert the input number to a string for easy manipulation
+    // convert input number to a string
     let numStr = String(number)
-    var maxNumber = Int.min // Initialize maxNumber with the smallest integer
+    var maxNumber = Int.min // initialize maxNumber with smallest integer
     
     // find  range for insertion based on the number being positive or negative
-    let range = number >= 0 ? 0...numStr.count : 1...numStr.count // Start from 1 for negative numbers to skip the '-' sign
+    let range = number >= 0 ? 0...numStr.count : 1...numStr.count // start from 1 for negative numbers to skip - sign
     
     for i in range {
         // insert 5 at the current position i
@@ -55,4 +55,4 @@ func insertFive(toMakeLargest number: Int) -> Int {
     return maxNumber
 }
 
-print(insertFive(toMakeLargest: 0))
+print(insertFive(toMakeLargest: 90))

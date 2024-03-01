@@ -231,4 +231,53 @@ if let isim = try? nameValidation(name: "Songul") {
 
 let result = try! nameValidation(name: "Oguzhan")
 
+enum calculateError: Error {
+    case nanError // 0 / 0
+    case InfError //sayi / 0
+    case baseError //bolunen 0 ise
+    
+}
 
+func bolme(bolunen: Double, bolen: Double) throws -> Double {
+    
+    guard bolunen != 0 || bolen != 0 else {
+        print("nan error")
+        throw calculateError.nanError
+    }
+    
+    guard bolunen != 0 else {
+        print("base error")
+        throw calculateError.baseError
+    }
+    
+    guard bolen != 0 else {
+        print("inf error")
+        throw calculateError.InfError
+    }
+    
+    return bolunen / bolen
+}
+
+
+
+/*extension Int {
+    func isEven() {
+      return self % 2 == 0
+    }
+}*/
+
+//GENERICS -TIPTEN BAGIMSIZ SEKILDE KULLANIMA IZIN VEREN YAPILAR
+//generik kullanarak 2 sayinin toplamini donen bir fonksiyon
+
+func sumNumber<T: Numeric>(first: T, second: T) -> T {
+    return first + second
+}
+
+func findIndex<T>(foundItem: T, in items: [T]) -> Int? {
+    return 0
+} // hatali bir kullanim var mi? -- eger arrayde bulamazsa indexi Int yazdigimiz icin crashed olur, o yuzden Int? yazariz
+                      
+
+// 2 parametreli ve farklı tipli bir generic örneği yapınız, euler 7
+//ODEV HESAP MAKINESI REFACTOR.
+// sayinin tek cift oldugunu bilen extention
