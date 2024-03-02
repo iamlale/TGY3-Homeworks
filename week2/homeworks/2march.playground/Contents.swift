@@ -68,3 +68,31 @@ let result3 = combine(key: 1, value: "One")
 print(result3)
 
 
+
+
+
+enum CalculateError: Error {
+    case nanError // 0 / 0
+    case infError // number / 0
+}
+
+func division(dividend: Double, divisor: Double) throws -> Double {
+    guard !(dividend == 0 && divisor == 0) else {
+        print("NaN Error")
+        throw CalculateError.nanError
+    }
+    
+    guard divisor != 0 else {
+        print("Inf Error")
+        throw CalculateError.infError
+    }
+    
+    return dividend / divisor
+}
+
+do {
+    let result = try division(dividend: 5, divisor: 0)
+    print(result)
+} catch {
+    print(error)
+}
