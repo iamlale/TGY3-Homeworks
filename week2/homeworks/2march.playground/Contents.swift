@@ -70,6 +70,7 @@ print(result3)
 
 
 
+// calculate handler
 
 enum CalculateError: Error {
     case nanError // 0 / 0
