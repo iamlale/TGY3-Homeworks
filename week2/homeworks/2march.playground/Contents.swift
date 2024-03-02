@@ -74,24 +74,29 @@ print(result3)
 enum CalculateError: Error {
     case nanError // 0 / 0
     case infError // number / 0
+    case baseError // 0 / sayi
 }
 
 func division(dividend: Double, divisor: Double) throws -> Double {
     guard !(dividend == 0 && divisor == 0) else {
-        print("NaN Error")
+       // print("NaN Error")
         throw CalculateError.nanError
     }
     
     guard divisor != 0 else {
-        print("Inf Error")
+        //print("Inf Error")
         throw CalculateError.infError
     }
     
+    guard dividend != 0 else {
+        throw CalculateError.baseError
+    }
+        
     return dividend / divisor
 }
 
 do {
-    let result = try division(dividend: 5, divisor: 0)
+    let result = try division(dividend: 0, divisor: 5)
     print(result)
 } catch {
     print(error)
