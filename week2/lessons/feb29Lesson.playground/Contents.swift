@@ -33,7 +33,7 @@ task2.resume()*/
  ENUMS - ORTAK ozellikleri olan nesneleri toplamak icin kullanilir
  */
 
-enum Direction {
+/*enum Direction {
     case right
     case left
     case top
@@ -281,3 +281,5 @@ func findIndex<T>(foundItem: T, in items: [T]) -> Int? {
 // 2 parametreli ve farklı tipli bir generic örneği yapınız, euler 7
 //ODEV HESAP MAKINESI REFACTOR.
 // sayinin tek cift oldugunu bilen extention
+*/
+
