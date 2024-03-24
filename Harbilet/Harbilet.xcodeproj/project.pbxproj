@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25D858D32BAEFB540074AF48 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D858D22BAEE25D0074AF48 /* EmptyView.xib */; };
+		25DA8D402BAD8E6400E39D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D3F2BAD8E6400E39D97 /* AppDelegate.swift */; };
+		25DA8D422BAD8E6400E39D97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D412BAD8E6400E39D97 /* SceneDelegate.swift */; };
+		25DA8D442BAD8E6400E39D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D432BAD8E6400E39D97 /* ViewController.swift */; };
+		25DA8D472BAD8E6400E39D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DA8D452BAD8E6400E39D97 /* Main.storyboard */; };
+		25DA8D4A2BAD8E6400E39D97 /* Harbilet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D482BAD8E6400E39D97 /* Harbilet.xcdatamodeld */; };
+		25DA8D4C2BAD8E6500E39D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DA8D4B2BAD8E6500E39D97 /* Assets.xcassets */; };
+		25DA8D4F2BAD8E6500E39D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DA8D4D2BAD8E6500E39D97 /* LaunchScreen.storyboard */; };
+		25DA8D592BAD9A6E00E39D97 /* BookedDestinationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D582BAD9A6E00E39D97 /* BookedDestinationsVC.swift */; };
+		25DA8D5C2BAD9BFD00E39D97 /* BusListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D5B2BAD9BFD00E39D97 /* BusListVC.swift */; };
+		25DA8D622BAD9C6000E39D97 /* CitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D612BAD9C6000E39D97 /* CitiesVC.swift */; };
+		25DA8D642BAD9D3300E39D97 /* FindDestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D632BAD9D3300E39D97 /* FindDestinationVC.swift */; };
+		25DA8D662BAD9E3F00E39D97 /* PayScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D652BAD9E3F00E39D97 /* PayScreenVC.swift */; };
+		25DA8D692BAD9E7100E39D97 /* SeatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D682BAD9E7100E39D97 /* SeatsVC.swift */; };
+		25DA8D6B2BAD9E9A00E39D97 /* TicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D6A2BAD9E9A00E39D97 /* TicketVC.swift */; };
+		25DA8D6F2BADAE0400E39D97 /* BusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D6E2BADAE0400E39D97 /* BusCell.swift */; };
+		25DA8D712BADAE2400E39D97 /* SeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D702BADAE2400E39D97 /* SeatCell.swift */; };
+		25DA8D732BADAE6D00E39D97 /* SelectedSeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D722BADAE6D00E39D97 /* SelectedSeatCell.swift */; };
+		25DA8D752BADB1C500E39D97 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D742BADB1C500E39D97 /* TicketCell.swift */; };
+		25DA8D782BADB1FB00E39D97 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D772BADB1FB00E39D97 /* EmptyView.swift */; };
+		25DA8D7D2BADB2CD00E39D97 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D7C2BADB2CD00E39D97 /* NotificationExtension.swift */; };
+		25DA8D842BADB36900E39D97 /* BusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D832BADB36900E39D97 /* BusModel.swift */; };
+		25DA8D862BADB38E00E39D97 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D852BADB38E00E39D97 /* CityModel.swift */; };
+		25DA8D882BADB3AB00E39D97 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D872BADB3AB00E39D97 /* ErrorModel.swift */; };
+		25DA8D8A2BADB3CB00E39D97 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D892BADB3CB00E39D97 /* Passenger.swift */; };
+		25DA8D8C2BADB3FF00E39D97 /* SeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D8B2BADB3FF00E39D97 /* SeatModel.swift */; };
+		25DA8D8E2BADB6E100E39D97 /* SharedTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D8D2BADB6E100E39D97 /* SharedTickets.swift */; };
+		25DA8D902BADB6FE00E39D97 /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D8F2BADB6FE00E39D97 /* TicketModel.swift */; };
+		25DA8D922BADB7BC00E39D97 /* ConfirmPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D912BADB7BC00E39D97 /* ConfirmPopUpVC.swift */; };
+		25DA8D942BADB7DE00E39D97 /* ErrorPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D932BADB7DE00E39D97 /* ErrorPopUpVC.swift */; };
+		25DA8D962BADB81000E39D97 /* GenderSelectPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D952BADB81000E39D97 /* GenderSelectPopUp.swift */; };
+		25DA8D9E2BADBAEC00E39D97 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D9D2BADBAEC00E39D97 /* OnboardingCell.swift */; };
+		25DA8DA02BADBB1900E39D97 /* OnboardingSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8D9F2BADBB1900E39D97 /* OnboardingSlideModel.swift */; };
+		25DA8DA22BADBB3F00E39D97 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA8DA12BADBB3F00E39D97 /* OnboardingVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25D858D22BAEE25D0074AF48 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		25DA8D3C2BAD8E6400E39D97 /* Harbilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harbilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DA8D3F2BAD8E6400E39D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25DA8D412BAD8E6400E39D97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		25DA8D432BAD8E6400E39D97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25DA8D462BAD8E6400E39D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25DA8D492BAD8E6400E39D97 /* Harbilet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Harbilet.xcdatamodel; sourceTree = "<group>"; };
+		25DA8D4B2BAD8E6500E39D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25DA8D4E2BAD8E6500E39D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25DA8D502BAD8E6500E39D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25DA8D582BAD9A6E00E39D97 /* BookedDestinationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookedDestinationsVC.swift; sourceTree = "<group>"; };
+		25DA8D5B2BAD9BFD00E39D97 /* BusListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListVC.swift; sourceTree = "<group>"; };
+		25DA8D612BAD9C6000E39D97 /* CitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesVC.swift; sourceTree = "<group>"; };
+		25DA8D632BAD9D3300E39D97 /* FindDestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDestinationVC.swift; sourceTree = "<group>"; };
+		25DA8D652BAD9E3F00E39D97 /* PayScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayScreenVC.swift; sourceTree = "<group>"; };
+		25DA8D682BAD9E7100E39D97 /* SeatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsVC.swift; sourceTree = "<group>"; };
+		25DA8D6A2BAD9E9A00E39D97 /* TicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVC.swift; sourceTree = "<group>"; };
+		25DA8D6E2BADAE0400E39D97 /* BusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCell.swift; sourceTree = "<group>"; };
+		25DA8D702BADAE2400E39D97 /* SeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCell.swift; sourceTree = "<group>"; };
+		25DA8D722BADAE6D00E39D97 /* SelectedSeatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSeatCell.swift; sourceTree = "<group>"; };
+		25DA8D742BADB1C500E39D97 /* TicketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		25DA8D772BADB1FB00E39D97 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		25DA8D7C2BADB2CD00E39D97 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		25DA8D832BADB36900E39D97 /* BusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusModel.swift; sourceTree = "<group>"; };
+		25DA8D852BADB38E00E39D97 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		25DA8D872BADB3AB00E39D97 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		25DA8D892BADB3CB00E39D97 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		25DA8D8B2BADB3FF00E39D97 /* SeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatModel.swift; sourceTree = "<group>"; };
+		25DA8D8D2BADB6E100E39D97 /* SharedTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTickets.swift; sourceTree = "<group>"; };
+		25DA8D8F2BADB6FE00E39D97 /* TicketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketModel.swift; sourceTree = "<group>"; };
+		25DA8D912BADB7BC00E39D97 /* ConfirmPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPopUpVC.swift; sourceTree = "<group>"; };
+		25DA8D932BADB7DE00E39D97 /* ErrorPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopUpVC.swift; sourceTree = "<group>"; };
+		25DA8D952BADB81000E39D97 /* GenderSelectPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectPopUp.swift; sourceTree = "<group>"; };
+		25DA8D9D2BADBAEC00E39D97 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		25DA8D9F2BADBB1900E39D97 /* OnboardingSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideModel.swift; sourceTree = "<group>"; };
+		25DA8DA12BADBB3F00E39D97 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25DA8D392BAD8E6400E39D97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25D858D12BAEE25D0074AF48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25D858D22BAEE25D0074AF48 /* EmptyView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25DA8D332BAD8E6400E39D97 = {
+			isa = PBXGroup;
+			children = (
+				25DA8D3E2BAD8E6400E39D97 /* Harbilet */,
+				25DA8D3D2BAD8E6400E39D97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25DA8D3D2BAD8E6400E39D97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D3C2BAD8E6400E39D97 /* Harbilet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25DA8D3E2BAD8E6400E39D97 /* Harbilet */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D972BADB8AE00E39D97 /* Onboarding */,
+				25DA8D822BADB35900E39D97 /* Models */,
+				25DA8D7B2BADB2B000E39D97 /* Extensions */,
+				25D858D12BAEE25D0074AF48 /* Views */,
+				25DA8D5A2BAD9ABE00E39D97 /* Controllers */,
+				25DA8D6C2BADAD9D00E39D97 /* CustomViews */,
+				25DA8D412BAD8E6400E39D97 /* SceneDelegate.swift */,
+				25DA8D3F2BAD8E6400E39D97 /* AppDelegate.swift */,
+				25DA8D432BAD8E6400E39D97 /* ViewController.swift */,
+				25DA8D452BAD8E6400E39D97 /* Main.storyboard */,
+				25DA8D4B2BAD8E6500E39D97 /* Assets.xcassets */,
+				25DA8D4D2BAD8E6500E39D97 /* LaunchScreen.storyboard */,
+				25DA8D502BAD8E6500E39D97 /* Info.plist */,
+				25DA8D482BAD8E6400E39D97 /* Harbilet.xcdatamodeld */,
+			);
+			path = Harbilet;
+			sourceTree = "<group>";
+		};
+		25DA8D5A2BAD9ABE00E39D97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D582BAD9A6E00E39D97 /* BookedDestinationsVC.swift */,
+				25DA8D5B2BAD9BFD00E39D97 /* BusListVC.swift */,
+				25DA8D612BAD9C6000E39D97 /* CitiesVC.swift */,
+				25DA8D632BAD9D3300E39D97 /* FindDestinationVC.swift */,
+				25DA8D652BAD9E3F00E39D97 /* PayScreenVC.swift */,
+				25DA8D6A2BAD9E9A00E39D97 /* TicketVC.swift */,
+				25DA8D682BAD9E7100E39D97 /* SeatsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		25DA8D6C2BADAD9D00E39D97 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D772BADB1FB00E39D97 /* EmptyView.swift */,
+				25DA8D762BADB1DD00E39D97 /* PopUps */,
+				25DA8D6D2BADADD200E39D97 /* Cells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		25DA8D6D2BADADD200E39D97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D6E2BADAE0400E39D97 /* BusCell.swift */,
+				25DA8D702BADAE2400E39D97 /* SeatCell.swift */,
+				25DA8D722BADAE6D00E39D97 /* SelectedSeatCell.swift */,
+				25DA8D742BADB1C500E39D97 /* TicketCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		25DA8D762BADB1DD00E39D97 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D912BADB7BC00E39D97 /* ConfirmPopUpVC.swift */,
+				25DA8D932BADB7DE00E39D97 /* ErrorPopUpVC.swift */,
+				25DA8D952BADB81000E39D97 /* GenderSelectPopUp.swift */,
+			);
+			path = PopUps;
+			sourceTree = "<group>";
+		};
+		25DA8D7B2BADB2B000E39D97 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D7C2BADB2CD00E39D97 /* NotificationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25DA8D822BADB35900E39D97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D832BADB36900E39D97 /* BusModel.swift */,
+				25DA8D852BADB38E00E39D97 /* CityModel.swift */,
+				25DA8D872BADB3AB00E39D97 /* ErrorModel.swift */,
+				25DA8D892BADB3CB00E39D97 /* Passenger.swift */,
+				25DA8D8B2BADB3FF00E39D97 /* SeatModel.swift */,
+				25DA8D8D2BADB6E100E39D97 /* SharedTickets.swift */,
+				25DA8D8F2BADB6FE00E39D97 /* TicketModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25DA8D972BADB8AE00E39D97 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				25DA8D9D2BADBAEC00E39D97 /* OnboardingCell.swift */,
+				25DA8D9F2BADBB1900E39D97 /* OnboardingSlideModel.swift */,
+				25DA8DA12BADBB3F00E39D97 /* OnboardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25DA8D3B2BAD8E6400E39D97 /* Harbilet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DA8D532BAD8E6500E39D97 /* Build configuration list for PBXNativeTarget "Harbilet" */;
+			buildPhases = (
+				25DA8D382BAD8E6400E39D97 /* Sources */,
+				25DA8D392BAD8E6400E39D97 /* Frameworks */,
+				25DA8D3A2BAD8E6400E39D97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Harbilet;
+			productName = Harbilet;
+			productReference = 25DA8D3C2BAD8E6400E39D97 /* Harbilet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25DA8D342BAD8E6400E39D97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					25DA8D3B2BAD8E6400E39D97 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 25DA8D372BAD8E6400E39D97 /* Build configuration list for PBXProject "Harbilet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25DA8D332BAD8E6400E39D97;
+			productRefGroup = 25DA8D3D2BAD8E6400E39D97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25DA8D3B2BAD8E6400E39D97 /* Harbilet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25DA8D3A2BAD8E6400E39D97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D858D32BAEFB540074AF48 /* EmptyView.xib in Resources */,
+				25DA8D4F2BAD8E6500E39D97 /* LaunchScreen.storyboard in Resources */,
+				25DA8D4C2BAD8E6500E39D97 /* Assets.xcassets in Resources */,
+				25DA8D472BAD8E6400E39D97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25DA8D382BAD8E6400E39D97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DA8D4A2BAD8E6400E39D97 /* Harbilet.xcdatamodeld in Sources */,
+				25DA8D622BAD9C6000E39D97 /* CitiesVC.swift in Sources */,
+				25DA8D8C2BADB3FF00E39D97 /* SeatModel.swift in Sources */,
+				25DA8D8A2BADB3CB00E39D97 /* Passenger.swift in Sources */,
+				25DA8D8E2BADB6E100E39D97 /* SharedTickets.swift in Sources */,
+				25DA8D712BADAE2400E39D97 /* SeatCell.swift in Sources */,
+				25DA8D5C2BAD9BFD00E39D97 /* BusListVC.swift in Sources */,
+				25DA8D782BADB1FB00E39D97 /* EmptyView.swift in Sources */,
+				25DA8D662BAD9E3F00E39D97 /* PayScreenVC.swift in Sources */,
+				25DA8D442BAD8E6400E39D97 /* ViewController.swift in Sources */,
+				25DA8D882BADB3AB00E39D97 /* ErrorModel.swift in Sources */,
+				25DA8D402BAD8E6400E39D97 /* AppDelegate.swift in Sources */,
+				25DA8D592BAD9A6E00E39D97 /* BookedDestinationsVC.swift in Sources */,
+				25DA8D922BADB7BC00E39D97 /* ConfirmPopUpVC.swift in Sources */,
+				25DA8D692BAD9E7100E39D97 /* SeatsVC.swift in Sources */,
+				25DA8D862BADB38E00E39D97 /* CityModel.swift in Sources */,
+				25DA8D642BAD9D3300E39D97 /* FindDestinationVC.swift in Sources */,
+				25DA8D422BAD8E6400E39D97 /* SceneDelegate.swift in Sources */,
+				25DA8D942BADB7DE00E39D97 /* ErrorPopUpVC.swift in Sources */,
+				25DA8D7D2BADB2CD00E39D97 /* NotificationExtension.swift in Sources */,
+				25DA8D6F2BADAE0400E39D97 /* BusCell.swift in Sources */,
+				25DA8D9E2BADBAEC00E39D97 /* OnboardingCell.swift in Sources */,
+				25DA8D752BADB1C500E39D97 /* TicketCell.swift in Sources */,
+				25DA8DA02BADBB1900E39D97 /* OnboardingSlideModel.swift in Sources */,
+				25DA8D842BADB36900E39D97 /* BusModel.swift in Sources */,
+				25DA8DA22BADBB3F00E39D97 /* OnboardingVC.swift in Sources */,
+				25DA8D6B2BAD9E9A00E39D97 /* TicketVC.swift in Sources */,
+				25DA8D732BADAE6D00E39D97 /* SelectedSeatCell.swift in Sources */,
+				25DA8D902BADB6FE00E39D97 /* TicketModel.swift in Sources */,
+				25DA8D962BADB81000E39D97 /* GenderSelectPopUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		25DA8D452BAD8E6400E39D97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DA8D462BAD8E6400E39D97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25DA8D4D2BAD8E6500E39D97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25DA8D4E2BAD8E6500E39D97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25DA8D512BAD8E6500E39D97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25DA8D522BAD8E6500E39D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25DA8D542BAD8E6500E39D97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPUJNQ2P4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Harbilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lalehuseyn.Harbilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25DA8D552BAD8E6500E39D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPUJNQ2P4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Harbilet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lalehuseyn.Harbilet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25DA8D372BAD8E6400E39D97 /* Build configuration list for PBXProject "Harbilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DA8D512BAD8E6500E39D97 /* Debug */,
+				25DA8D522BAD8E6500E39D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DA8D532BAD8E6500E39D97 /* Build configuration list for PBXNativeTarget "Harbilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DA8D542BAD8E6500E39D97 /* Debug */,
+				25DA8D552BAD8E6500E39D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25DA8D482BAD8E6400E39D97 /* Harbilet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25DA8D492BAD8E6400E39D97 /* Harbilet.xcdatamodel */,
+			);
+			currentVersion = 25DA8D492BAD8E6400E39D97 /* Harbilet.xcdatamodel */;
+			path = Harbilet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25DA8D342BAD8E6400E39D97 /* Project object */;
+}
