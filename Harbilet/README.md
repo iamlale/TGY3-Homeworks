@@ -6,11 +6,11 @@ Harbilet is a modern iOS application designed to simplify bus travel. Built usin
 
 ## 📚 Table of Contents
 
-- [Installation](#installation)
-- [Features](#features)
-- [Usage](#usage)
+- [Installation](#gear-installation)
+- [Features](#features-sparkles)
+- [Usage](#%EF%B8%8F-usage)
 - [Technology Stack](#-technology-stack)
-- [GIFS](#confjsdtact)
+- [GIFs](#-experience-harbilet-a-visual-tour)
 
 ## :gear: Installation
 
@@ -29,8 +29,7 @@ Open the `Harbilet.xcworkspace` file in Xcode, build the project, and run it on 
 - **Eco-friendly Options** 🌱 Highlight eco-friendly bus travel options or companies that use sustainable practices.
 
 
-
-## 🛠️💻 Usage
+## 🛠️ Usage
 
 To book a ticket, follow these steps:
 
